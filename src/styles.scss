@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+$font-size:1.2rem;
+html{
+  font-size: 62.5%;;
+}
+html,body,h1,h2,h3,h4,h5,h6,h7,p,ul,li{
+  padding:0;
+  margin:0;
+}
+body{
+  font-size:$font-size;
+  font-family:'苹方-简体';
+}
+
+li{list-style: none;}
+a{text-decoration: none;}
+
+.floatF:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}

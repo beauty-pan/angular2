@@ -1,0 +1,26 @@
+<div class="notice-con">
+  <div class="person-con">
+    <h4>{{title}}</h4>
+    <ul>
+      <li *ngFor="let f of fruitsList">{{f}}</li>
+    </ul>
+    <div>
+      <p>读取消息：</p>
+      <div class="notice-list">
+
+      </div>
+
+      <input type="text"  [(ngModel)]="userData.name" placeholder="请填写姓名">
+      <input type="text"  [(ngModel)]="userData.phone" placeholder="请填写手机号">
+      <input type="text"  [(ngModel)]="userData.identity" placeholder="请填写身份证号">
+      <p>这是输入的数据：{{userData.name}}</p>
+      <p>这是输入的数据：{{userData.phone}}</p>
+      <p>这是输入的数据：{{userData.identity}}</p>
+
+        <button (click)="readyUser()">获取数据按钮</button>
+      <svg>
+        <rect x="0" y="0" width="100" height="100"/>
+      </svg>
+    </div>
+  </div>
+</div>
